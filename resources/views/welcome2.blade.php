@@ -67,22 +67,22 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav mx-auto">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Services</a>
+                            <a class="nav-link" href="#services">Services</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About Us</a>
+                            <a class="nav-link" href="#about">About Us</a>
                         </li>
                         <a class="navbar-brand d-none d-md-block" href="#">
                             <img src="/images/logow.png" alt="">
                         </a>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Get Quote</a>
+                            <a class="nav-link" href="#quote">Get Quote</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Portofolio</a>
+                            <a class="nav-link" href="#portofolio">Portofolio</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Contact</a>
@@ -94,19 +94,14 @@
     </header>
 
     <main>
-        <div class="position-relative overflow-hidden p-3 p-md-5 text-center bg-light">
+        <div class="position-relative overflow-hidden p-3 p-md-5 text-center bg-light" id="home">
             <div class="col-md-5 p-lg-5 mx-auto my-5">
-                <h1 class="display-4 fw-normal">Punny headline</h1>
-                <p class="lead fw-normal">And an even wittier subheading to boot. Jumpstart your marketing efforts with
-                    this example based on Apple’s marketing pages.</p>
-                <a class="btn btn-outline-secondary" href="https://getbootstrap.com/docs/5.0/examples/product/#">Coming
-                    soon</a>
+                <h1 class="display-4 fw-normal">HS London Marble</h1>
+                <p class="lead fw-normal">HS London Marble is a premier glass and mirrors company specializing in high-quality custom pieces for residential and commercial spaces. With a focus on craftsmanship and attention to detail, we offer a wide range of products including bespoke mirrors, glass staircases, shower enclosures, and much more. Our team of skilled artisans uses only the finest materials to create stunning, unique pieces that add elegance and sophistication to any environment. From design concept to installation, HS Marble London delivers the utmost in customer satisfaction and luxury.</p>
             </div>
-            <div class="product-device shadow-sm d-none d-md-block"></div>
-            <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
         </div>
 
-        <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+        <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3" id="services">
             <div class="bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
                 <div class="my-3 py-3">
                     <h2 class="display-5">Another headline</h2>
@@ -125,7 +120,7 @@
             </div>
         </div>
 
-        <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+        <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3" id="about">
             <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
                 <div class="my-3 p-3">
                     <h2 class="display-5">Another headline</h2>
@@ -144,7 +139,7 @@
             </div>
         </div>
 
-        <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+        <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3" id="quote">
             <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
                 <div class="my-3 p-3">
                     <h2 class="display-5">Another headline</h2>
@@ -165,7 +160,7 @@
             </div>
         </div>
 
-        <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+        <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3" id="portofolio">
             <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
                 <div class="my-3 p-3">
                     <h2 class="display-5">Another headline</h2>
