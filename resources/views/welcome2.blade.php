@@ -392,7 +392,7 @@
                         <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-inner" role="listbox">
                                 <div class="carousel-item active">
-                                    <div class="col-md-3">
+                                    <div class="col-md-3 mx-2">
                                         <div class="card">
                                             <div class="card-img">
                                                 <img src="/images/mirrors/1.jpg" class="img-fluid">
@@ -401,7 +401,7 @@
                                     </div>
                                 </div>
                                 <div class="carousel-item">
-                                    <div class="col-md-3">
+                                    <div class="col-md-3 mx-2">
                                         <div class="card">
                                             <div class="card-img">
                                                 <img src="/images/mirrors/2.jpg" class="img-fluid">
@@ -410,7 +410,7 @@
                                     </div>
                                 </div>
                                 <div class="carousel-item">
-                                    <div class="col-md-3">
+                                    <div class="col-md-3 mx-2">
                                         <div class="card">
                                             <div class="card-img">
                                                 <img src="/images/mirrors/3.jpg" class="img-fluid">
@@ -419,7 +419,7 @@
                                     </div>
                                 </div>
                                 <div class="carousel-item">
-                                    <div class="col-md-3">
+                                    <div class="col-md-3 mx-2">
                                         <div class="card">
                                             <div class="card-img">
                                                 <img src="/images/mirrors/4.jpg" class="img-fluid">
@@ -428,7 +428,7 @@
                                     </div>
                                 </div>
                                 <div class="carousel-item">
-                                    <div class="col-md-3">
+                                    <div class="col-md-3 mx-2">
                                         <div class="card">
                                             <div class="card-img">
                                                 <img src="/images/mirrors/5.jpg" class="img-fluid">
@@ -437,7 +437,7 @@
                                     </div>
                                 </div>
                                 <div class="carousel-item">
-                                    <div class="col-md-3">
+                                    <div class="col-md-3 mx-2">
                                         <div class="card">
                                             <div class="card-img">
                                                 <img src="/images/mirrors/6.jpg" class="img-fluid">
@@ -446,7 +446,7 @@
                                     </div>
                                 </div>
                                 <div class="carousel-item">
-                                    <div class="col-md-3">
+                                    <div class="col-md-3 mx-2">
                                         <div class="card">
                                             <div class="card-img">
                                                 <img src="/images/mirrors/7.jpg" class="img-fluid">
@@ -455,7 +455,7 @@
                                     </div>
                                 </div>
                                 <div class="carousel-item">
-                                    <div class="col-md-3">
+                                    <div class="col-md-3 mx-2">
                                         <div class="card">
                                             <div class="card-img">
                                                 <img src="/images/mirrors/8.jpg" class="img-fluid">
@@ -464,7 +464,7 @@
                                     </div>
                                 </div>
                                 <div class="carousel-item">
-                                    <div class="col-md-3">
+                                    <div class="col-md-3 mx-2">
                                         <div class="card">
                                             <div class="card-img">
                                                 <img src="/images/mirrors/9.jpg" class="img-fluid">
@@ -473,7 +473,7 @@
                                     </div>
                                 </div>
                                 <div class="carousel-item">
-                                    <div class="col-md-3">
+                                    <div class="col-md-3 mx-2">
                                         <div class="card">
                                             <div class="card-img">
                                                 <img src="/images/mirrors/10.jpg" class="img-fluid">
@@ -482,12 +482,12 @@
                                     </div>
                                 </div>
                             </div>
-                            <a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarousel"
-                                role="button" data-bs-slide="prev">
+                            <a class="carousel-control-prev bg-dark w-aut" href="#recipeCarousel" role="button"
+                                data-bs-slide="prev">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             </a>
-                            <a class="carousel-control-next bg-transparent w-aut" href="#recipeCarousel"
-                                role="button" data-bs-slide="next">
+                            <a class="carousel-control-next bg-dark w-aut" href="#recipeCarousel" role="button"
+                                data-bs-slide="next">
                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             </a>
                         </div>

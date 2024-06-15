@@ -168,5 +168,6 @@ p {
 
 .carousel-inner .carousel-item-end,
 .carousel-inner .carousel-item-start {
+    display: none;
     transform: translateX(0);
 }
