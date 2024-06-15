@@ -85,7 +85,7 @@
                             <a class="nav-link" href="#portofolio">Portofolio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
+                            <a class="nav-link" href="#contanct">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -499,6 +499,41 @@
                     ...</div> --}}
             </div>
         </div>
+        <div class="w-100 mt-md-3 bg-dark" id="contanct">
+            <h1 class="display-4 fw-normal pt-3 my-4 text-center text-light">Contact Us</h1>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 mb-2">
+                        <div class="btn-group btn-group-lg w-100">
+                            <a href="mailto:info@hslondonmarble.co.uk" class="btn btn-light rounded-0"><i
+                                    class="bi bi-envelope-at"></i></a>
+                            <a href="mailto:info@hslondonmarble.co.uk"
+                                class="btn btn-light rounded-0">info@hslondonmarble.co.uk</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-2">
+                        <div class="btn-group btn-group-lg w-100">
+                            <a class="btn btn-light rounded-0"><i class="bi bi-geo-alt"></i></a>
+                            <a class="btn btn-light rounded-0">Unit 5e Station Rd, Slough SL3 6EG</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="btn-group btn-group-lg w-100">
+                            <a href="tel:07951612480" class="btn btn-light rounded-0"><i class="bi bi-phone"></i></a>
+                            <a href="tel:07951612480" class="btn btn-light rounded-0">07951612480</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="btn-group btn-group-lg w-100">
+                            <a href="tel:02082260140" class="btn btn-light rounded-0"><i
+                                    class="bi bi-telephone"></i></a>
+                            <a href="tel:02082260140" class="btn btn-light rounded-0">02082260140</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </main>
 
     <footer class="container m-0 mw-100 py-5 bg-dark">
