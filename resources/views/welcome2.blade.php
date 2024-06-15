@@ -95,29 +95,155 @@
 
     <main>
         <div class="position-relative overflow-hidden p-3 p-md-5 text-center bg-light" id="home">
-            <div class="col-md-5 p-lg-5 mx-auto my-5">
+            <div class="col-md-8 p-lg-5 mx-auto my-3 opacity-content">
                 <h1 class="display-4 fw-normal">HS London Marble</h1>
-                <p class="lead fw-normal">HS London Marble is a premier glass and mirrors company specializing in high-quality custom pieces for residential and commercial spaces. With a focus on craftsmanship and attention to detail, we offer a wide range of products including bespoke mirrors, glass staircases, shower enclosures, and much more. Our team of skilled artisans uses only the finest materials to create stunning, unique pieces that add elegance and sophistication to any environment. From design concept to installation, HS Marble London delivers the utmost in customer satisfaction and luxury.</p>
+                <p class="lead fw-normal">HS London Marble is a premier glass and mirrors company specializing in
+                    high-quality custom pieces for residential and commercial spaces. With a focus on craftsmanship and
+                    attention to detail, we offer a wide range of products including bespoke mirrors, glass staircases,
+                    shower enclosures, and much more. Our team of skilled artisans uses only the finest materials to
+                    create stunning, unique pieces that add elegance and sophistication to any environment. From design
+                    concept to installation, HS Marble London delivers the utmost in customer satisfaction and luxury.
+                </p>
             </div>
         </div>
 
-        <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3" id="services">
-            <div class="bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
-                <div class="my-3 py-3">
-                    <h2 class="display-5">Another headline</h2>
-                    <p class="lead">And an even wittier subheading.</p>
+        <div class="w-100 my-md-3" id="services">
+            <h1 class="display-4 fw-normal my-4 text-center">Our Services</h1>
+            <div class="d-flex align-items-start row mx-0">
+                <div class="nav flex-column nav-pills col-md-4 col-12" id="v-pills-tab" role="tablist"
+                    aria-orientation="vertical">
+                    <button class="nav-link active rounded-0 text-capitalize" id="v-pills-tam-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-tam" type="button" role="tab" aria-controls="v-pills-tam"
+                        aria-selected="true">toughened antique mirror</button>
+                    <button class="nav-link rounded-0 text-capitalize" id="v-pills-pc-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-pc" type="button" role="tab" aria-controls="v-pills-pc"
+                        aria-selected="false">plain colour</button>
+                    <button class="nav-link rounded-0 text-capitalize" id="v-pills-dp-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-dp" type="button" role="tab" aria-controls="v-pills-dp"
+                        aria-selected="false">design printed</button>
+                    <button class="nav-link rounded-0 text-capitalize" id="v-pills-sc-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-sc" type="button" role="tab" aria-controls="v-pills-sc"
+                        aria-selected="true">sparkling colour</button>
+                    <button class="nav-link rounded-0 text-capitalize" id="v-pills-lb-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-lb" type="button" role="tab" aria-controls="v-pills-lb"
+                        aria-selected="false">led backlit</button>
+                    <button class="nav-link rounded-0 text-capitalize" id="v-pills-bm-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-bm" type="button" role="tab" aria-controls="v-pills-bm"
+                        aria-selected="false">bathroom mirror</button>
+                    <button class="nav-link rounded-0 text-capitalize" id="v-pills-fwm-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-fwm" type="button" role="tab" aria-controls="v-pills-fwm"
+                        aria-selected="true">Future wall mirrors</button>
+                    <button class="nav-link rounded-0 text-capitalize" id="v-pills-gb-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-gb" type="button" role="tab" aria-controls="v-pills-gb"
+                        aria-selected="false">glass bulastrade</button>
+                    <button class="nav-link rounded-0 text-capitalize" id="v-pills-w-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-w" type="button" role="tab" aria-controls="v-pills-w"
+                        aria-selected="false">worktops</button>
+                    {{-- <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-messages" type="button" role="tab"
+                        aria-controls="v-pills-messages" aria-selected="false">Messages</button>
+                    <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-settings" type="button" role="tab"
+                        aria-controls="v-pills-settings" aria-selected="false">Settings</button> --}}
                 </div>
-                <div class="bg-light shadow-sm mx-auto"
-                    style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+                <div class="tab-content col-md-8 col-12" id="v-pills-tabContent">
+                    <div class="tab-pane fade show active" id="v-pills-tam" role="tabpanel"
+                        aria-labelledby="v-pills-tam-tab">
+                        <p class="pe-3">
+                            At <b>HS Marble London</b>, we offer toughened antique mirrors that
+                            combine elegance with durability. Our toughening process enhances the strength of the
+                            mirror,
+                            making it resistant to scratches and breakage. These mirrors feature a distressed vintage
+                            finish
+                            that adds character and charm to any space. Whether you're looking to add a touch of
+                            sophistication to your home or office, our toughened antique mirrors are the perfect choice.
+                            Transform your space with the timeless beauty of our antique mirrors from <b>HS Marble
+                                London</b>.
+                        </p>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-pc" role="tabpanel" aria-labelledby="v-pills-pc-tab">
+                        <p class="pe-3">We
+                            offer a stunning range of plain color glass at <b>HS Marble London</b>, that adds a touch of
+                            elegance
+                            and sophistication to any space. Our high-quality plain color glass is perfect for creating
+                            a
+                            sleek and modern look in your home or office. Whether you're looking to incorporate a subtle
+                            pop
+                            of color or create a seamless and sophisticated backdrop, our plain color glass is the
+                            perfect
+                            choice. With our expertise and dedication to quality, you can trust <b>HS Marble London</b>
+                            to
+                            provide
+                            you with the perfect solution for your glass needs.
+                        </p>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-dp" role="tabpanel" aria-labelledby="v-pills-dp-tab">3
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-sc" role="tabpanel" aria-labelledby="v-pills-sc-tab">4
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-lb" role="tabpanel" aria-labelledby="v-pills-lb-tab">5
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-bm" role="tabpanel" aria-labelledby="v-pills-bm-tab">6
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-fwm" role="tabpanel" aria-labelledby="v-pills-fwm-tab">7
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-gb" role="tabpanel" aria-labelledby="v-pills-gb-tab">8
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-w" role="tabpanel" aria-labelledby="v-pills-w-tab">9
+                    </div>
+                </div>
             </div>
-            <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-                <div class="my-3 p-3">
-                    <h2 class="display-5">Another headline</h2>
-                    <p class="lead">And an even wittier subheading.</p>
+            {{-- <div class="row">
+                <div class="col-12 col-md-4">
+                    <div class="bg-dark px-2 px-md-4 text-center overflow-hidden">
+                        <div class="my-2 py-2">
+                            <a class="text-capitalize btn text-white">toughened antique mirror</a>
+                        </div>
+                    </div>
+                    <div class="bg-light px-2 px-md-4 text-center overflow-hidden">
+                        <div class="my-2 p-2">
+                            <a class="text-capitalize btn">plain colour</a>
+                        </div>
+                    </div>
+                    <div class="bg-dark px-2 px-md-4 text-center overflow-hidden">
+                        <div class="my-2 py-2">
+                            <a class="text-capitalize btn text-white">design printed</a>
+                        </div>
+                    </div>
+                    <div class="bg-light px-2 px-md-4 text-center overflow-hidden">
+                        <div class="my-2 p-2">
+                            <a class="text-capitalize btn btn-sm">sparkling colour</a>
+                        </div>
+                    </div>
+                    <div class="bg-dark px-2 px-md-4 text-center overflow-hidden">
+                        <div class="my-2 py-2">
+                            <a class="text-capitalize btn btn-sm text-white">led backlit</a>
+                        </div>
+                    </div>
+                    <div class="bg-light px-2 px-md-4 text-center overflow-hidden">
+                        <div class="my-2 p-2">
+                            <a class="text-capitalize btn btn-sm">bathroom mirror</a>
+                        </div>
+                    </div>
+                    <div class="bg-dark px-2 px-md-3 text-center overflow-hidden">
+                        <div class="my-2 py-2">
+                            <a class="text-capitalize btn text-white">Future wall mirrors</a>
+                        </div>
+                    </div>
+                    <div class="bg-light px-2 px-md-3 text-center overflow-hidden">
+                        <div class="my-2 p-2">
+                            <a class="text-capitalize btn">glass bulastrade</a>
+                        </div>
+                    </div>
+                    <div class="bg-dark px-2 px-md-3 text-center overflow-hidden">
+                        <div class="my-2 py-2">
+                            <a class="text-capitalize btn text-white">worktops</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+                <div class="col-8 col-md-4">
                 </div>
-            </div>
+            </div> --}}
         </div>
 
         <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3" id="about">
@@ -126,7 +252,8 @@
                     <h2 class="display-5">Another headline</h2>
                     <p class="lead">And an even wittier subheading.</p>
                 </div>
-                <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+                <div class="bg-dark shadow-sm mx-auto"
+                    style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
                 </div>
             </div>
             <div class="bg-primary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">

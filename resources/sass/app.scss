@@ -11,6 +11,10 @@
     max-width: 960px;
 }
 
+* {
+    scroll-margin-top: 100px;
+}
+
 /*
    * Custom translucent site header
    */
@@ -102,4 +106,32 @@
     .flex-md-equal>* {
         flex: 1;
     }
+}
+
+#home {
+    background-image: url('/images/mirrors/main.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+}
+
+p.lead {
+    margin-top: auto !important;
+    margin-bottom: auto !important;
+}
+
+.nav-pills .nav-link {
+    color: $dark;
+}
+
+.nav-pills .nav-link.active {
+    background-color: $dark;
+}
+
+.nav-pills .nav-link:hover {
+    color: $secondary;
+}
+
+p {
+    text-align: justify;
 }
