@@ -8,7 +8,7 @@
     <meta name="description" content="">
     {{-- <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.84.0"> --}}
-    <title>HS Marble London</title>
+    <title>HS London Marble</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/product/">
 
@@ -72,15 +72,15 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#services">Services</a>
                         </li>
-                        <li class="nav-item">
+                        {{-- <li class="nav-item">
                             <a class="nav-link" href="#about">About Us</a>
-                        </li>
+                        </li> --}}
                         <a class="navbar-brand d-none d-md-block" href="#">
                             <img src="/images/logow.png" alt="">
                         </a>
-                        <li class="nav-item">
+                        {{-- <li class="nav-item">
                             <a class="nav-link" href="#quote">Get Quote</a>
-                        </li>
+                        </li> --}}
                         <li class="nav-item">
                             <a class="nav-link" href="#portofolio">Portofolio</a>
                         </li>
@@ -102,7 +102,7 @@
                     attention to detail, we offer a wide range of products including bespoke mirrors, glass staircases,
                     shower enclosures, and much more. Our team of skilled artisans uses only the finest materials to
                     create stunning, unique pieces that add elegance and sophistication to any environment. From design
-                    concept to installation, HS Marble London delivers the utmost in customer satisfaction and luxury.
+                    concept to installation, HS London Marble delivers the utmost in customer satisfaction and luxury.
                 </p>
             </div>
         </div>
@@ -135,7 +135,7 @@
                         aria-selected="true">Future wall mirrors</button>
                     <button class="nav-link rounded-0 text-capitalize" id="v-pills-gb-tab" data-bs-toggle="pill"
                         data-bs-target="#v-pills-gb" type="button" role="tab" aria-controls="v-pills-gb"
-                        aria-selected="false">glass bulastrade</button>
+                        aria-selected="false">glass balustrade</button>
                     <button class="nav-link rounded-0 text-capitalize" id="v-pills-w-tab" data-bs-toggle="pill"
                         data-bs-target="#v-pills-w" type="button" role="tab" aria-controls="v-pills-w"
                         aria-selected="false">worktops</button>
@@ -150,7 +150,7 @@
                     <div class="tab-pane fade show active" id="v-pills-tam" role="tabpanel"
                         aria-labelledby="v-pills-tam-tab">
                         <p class="pe-3">
-                            At <b>HS Marble London</b>, we offer toughened antique mirrors that
+                            At <b>HS London Marble</b>, we offer toughened antique mirrors that
                             combine elegance with durability. Our toughening process enhances the strength of the
                             mirror,
                             making it resistant to scratches and breakage. These mirrors feature a distressed vintage
@@ -163,7 +163,7 @@
                     </div>
                     <div class="tab-pane fade" id="v-pills-pc" role="tabpanel" aria-labelledby="v-pills-pc-tab">
                         <p class="pe-3">We
-                            offer a stunning range of plain color glass at <b>HS Marble London</b>, that adds a touch of
+                            offer a stunning range of plain color glass at <b>HS London Marble</b>, that adds a touch of
                             elegance
                             and sophistication to any space. Our high-quality plain color glass is perfect for creating
                             a
@@ -171,25 +171,104 @@
                             pop
                             of color or create a seamless and sophisticated backdrop, our plain color glass is the
                             perfect
-                            choice. With our expertise and dedication to quality, you can trust <b>HS Marble London</b>
+                            choice. With our expertise and dedication to quality, you can trust <b>HS London Marble</b>
                             to
                             provide
                             you with the perfect solution for your glass needs.
                         </p>
                     </div>
-                    <div class="tab-pane fade" id="v-pills-dp" role="tabpanel" aria-labelledby="v-pills-dp-tab">3
+                    <div class="tab-pane fade" id="v-pills-dp" role="tabpanel" aria-labelledby="v-pills-dp-tab">
+                        <p class="pe-3">
+                            At <b>HS London Marble</b>, we offer a wide range of design printed glass options to enhance
+                            the
+                            aesthetic appeal of your space. Our design printed glass is a versatile and stylish choice
+                            for adding a unique touch to your interiors. Whether you're looking to create a bold
+                            statement or simply add a subtle element of design, our design printed glass can be
+                            customized to suit your specific preferences. With high-quality materials and expert
+                            craftsmanship, our design printed glass will bring new life to any room in your home or
+                            office. Contact us today to explore the endless design possibilities with our design printed
+                            glass products.
+                        </p>
                     </div>
-                    <div class="tab-pane fade" id="v-pills-sc" role="tabpanel" aria-labelledby="v-pills-sc-tab">4
+                    <div class="tab-pane fade" id="v-pills-sc" role="tabpanel" aria-labelledby="v-pills-sc-tab">
+                        <p class="pe-3">
+                            Add a touch of elegance and glamour to your space with our stunning selection of sparkling
+                            color
+                            glass. At <b>HS London Marble</b>, we offer a range of vibrant and shimmering glass options
+                            that will
+                            instantly elevate the aesthetic of any room. Whether you want to create a bold statement
+                            piece
+                            with a splash of color or add a subtle hint of sparkle to your design, our sparkling color
+                            glass
+                            is the perfect choice. With our expertise and high-quality products, you can transform your
+                            space into a stylish and sophisticated oasis. Browse our collection today and discover the
+                            beauty and versatility of sparkling color glass.
+                        </p>
                     </div>
-                    <div class="tab-pane fade" id="v-pills-lb" role="tabpanel" aria-labelledby="v-pills-lb-tab">5
+                    <div class="tab-pane fade" id="v-pills-lb" role="tabpanel" aria-labelledby="v-pills-lb-tab">
+                        <p class="pe-3">
+                            Introducing our exquisite LED backlit mirrors, the perfect fusion of functionality and
+                            sophistication. Elevate your space with these modern and stylish mirrors that not only
+                            provide practical illumination but also add a touch of elegance to any room. Our LED backlit
+                            mirrors are crafted with precision and attention to detail, ensuring a high-quality and
+                            durable product that will enhance the ambiance of your space. Whether it's for a residential
+                            or commercial setting, our LED backlit mirrors are sure to impress with their sleek design
+                            and stunning visual impact. Experience luxury and style with <b>HS London Marble</b>'s LED
+                            backlit
+                            mirrors.
+                        </p>
                     </div>
-                    <div class="tab-pane fade" id="v-pills-bm" role="tabpanel" aria-labelledby="v-pills-bm-tab">6
+                    <div class="tab-pane fade" id="v-pills-bm" role="tabpanel" aria-labelledby="v-pills-bm-tab">
+                        <p class="pe-3">
+                            <b>HS London Marble</b> offers a stunning collection of bathroom mirrors that combine
+                            functionality
+                            with style. Our range includes a variety of designs, shapes, and sizes to suit every taste
+                            and bathroom decor. Whether you are looking for a sleek and modern mirror or a classic and
+                            elegant design, we have the perfect mirror to enhance your bathroom space. Our high-quality
+                            mirrors are made using premium materials and craftsmanship to ensure durability and
+                            longevity. Transform your bathroom into a luxurious retreat with a beautiful mirror from
+                            <b>HS
+                                London Marble</b>.
+                        </p>
                     </div>
-                    <div class="tab-pane fade" id="v-pills-fwm" role="tabpanel" aria-labelledby="v-pills-fwm-tab">7
+                    <div class="tab-pane fade" id="v-pills-fwm" role="tabpanel" aria-labelledby="v-pills-fwm-tab">
+                        <p class="pe-3">
+                            Our collection of future wall mirrors at <b>HS London Marble</b> glass company brings a
+                            touch of
+                            contemporary elegance to any bathroom space. Crafted from high-quality glass and featuring
+                            innovative LED backlighting technology, these mirrors not only enhance the aesthetic appeal
+                            of the room but also provide functional and practical lighting for your daily grooming
+                            routine. The sleek and modern design of our future wall mirrors adds a sophisticated touch
+                            to any bathroom setting, making them a must-have accessory for those looking to elevate
+                            their space with style and functionality.
+                        </p>
                     </div>
-                    <div class="tab-pane fade" id="v-pills-gb" role="tabpanel" aria-labelledby="v-pills-gb-tab">8
+                    <div class="tab-pane fade" id="v-pills-gb" role="tabpanel" aria-labelledby="v-pills-gb-tab">
+                        <p class="pe-3">
+                            Glass balustrades are a sophisticated and modern addition to any staircase or balcony,
+                            offering both style and safety. At <b>HS London Marble</b>, we offer a wide range of glass
+                            balustrade options to suit your design preferences and architectural requirements. Our
+                            expert team can customize the balustrades to fit your space perfectly, creating a sleek and
+                            seamless look. With high-quality materials and precise craftsmanship, our glass balustrades
+                            are not only functional but also add a touch of elegance to any interior or exterior space.
+                            Trust <b>HS London Marble</b> to deliver stunning glass balustrade solutions that enhance
+                            the
+                            beauty and functionality of your home or commercial property.
+                        </p>
                     </div>
-                    <div class="tab-pane fade" id="v-pills-w" role="tabpanel" aria-labelledby="v-pills-w-tab">9
+                    <div class="tab-pane fade" id="v-pills-w" role="tabpanel" aria-labelledby="v-pills-w-tab">
+                        <p class="pe-3">
+                            For high-quality worktops that combine functionality with elegance, look no further than
+                            <b>HS
+                                London Marble</b>. Our range of worktops are expertly crafted from premium materials,
+                            ensuring
+                            durability and a stylish finish that will elevate any kitchen or bathroom design. Whether
+                            you prefer the timeless sophistication of marble, the sleek modern look of quartz, or the
+                            natural beauty of granite, we have the perfect worktop solution to suit your personal style
+                            and taste. Trust <b>HS London Marble</b> for stunning worktops that will enhance the
+                            aesthetic
+                            appeal and functionality of your space.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -246,7 +325,7 @@
             </div> --}}
         </div>
 
-        <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3" id="about">
+        {{-- <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3" id="about">
             <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
                 <div class="my-3 p-3">
                     <h2 class="display-5">Another headline</h2>
@@ -264,9 +343,9 @@
                 <div class="bg-light shadow-sm mx-auto"
                     style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
             </div>
-        </div>
+        </div> --}}
 
-        <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3" id="quote">
+        {{-- <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3" id="quote">
             <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
                 <div class="my-3 p-3">
                     <h2 class="display-5">Another headline</h2>
@@ -285,44 +364,150 @@
                     style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
                 </div>
             </div>
-        </div>
+        </div> --}}
 
-        <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3" id="portofolio">
-            <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-                <div class="my-3 p-3">
-                    <h2 class="display-5">Another headline</h2>
-                    <p class="lead">And an even wittier subheading.</p>
+        <div class="w-100 my-md-3" id="portofolio">
+            <h1 class="display-4 fw-normal my-4 text-center">Our Work</h1>
+            <ul class="nav nav-pills nav-fill mb-3" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active rounded-0" id="pills-mirrors-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-mirrors" type="button" role="tab" aria-controls="pills-mirrors"
+                        aria-selected="true">Mirrors</button>
+                </li>
+                {{-- <li class="nav-item" role="presentation">
+                    <button class="nav-link rounded-0" id="pills-profile-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                        aria-selected="false">Profile</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link rounded-0" id="pills-contact-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
+                        aria-selected="false">Contact</button>
+                </li> --}}
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-mirrors" role="tabpanel"
+                    aria-labelledby="pills-home-mirrors">
+                    <div class="row mx-auto my-auto justify-content-center">
+                        <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner" role="listbox">
+                                <div class="carousel-item active">
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <div class="card-img">
+                                                <img src="/images/mirrors/1.jpg" class="img-fluid">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <div class="card-img">
+                                                <img src="/images/mirrors/2.jpg" class="img-fluid">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <div class="card-img">
+                                                <img src="/images/mirrors/3.jpg" class="img-fluid">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <div class="card-img">
+                                                <img src="/images/mirrors/4.jpg" class="img-fluid">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <div class="card-img">
+                                                <img src="/images/mirrors/5.jpg" class="img-fluid">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <div class="card-img">
+                                                <img src="/images/mirrors/6.jpg" class="img-fluid">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <div class="card-img">
+                                                <img src="/images/mirrors/7.jpg" class="img-fluid">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <div class="card-img">
+                                                <img src="/images/mirrors/8.jpg" class="img-fluid">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <div class="card-img">
+                                                <img src="/images/mirrors/9.jpg" class="img-fluid">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <div class="card-img">
+                                                <img src="/images/mirrors/10.jpg" class="img-fluid">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarousel"
+                                role="button" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            </a>
+                            <a class="carousel-control-next bg-transparent w-aut" href="#recipeCarousel"
+                                role="button" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <div class="bg-body shadow-sm mx-auto"
-                    style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
-                </div>
-            </div>
-            <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-                <div class="my-3 py-3">
-                    <h2 class="display-5">Another headline</h2>
-                    <p class="lead">And an even wittier subheading.</p>
-                </div>
-                <div class="bg-body shadow-sm mx-auto"
-                    style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+                {{-- <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                    ...</div>
+                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                    ...</div> --}}
             </div>
         </div>
     </main>
 
-    <footer class="container py-5">
+    <footer class="container m-0 mw-100 py-5 bg-dark">
         <div class="row">
             <div class="col-12 col-md">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
-                    stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    class="d-block mb-2" role="img" viewBox="0 0 24 24">
-                    <title>Product</title>
-                    <circle cx="12" cy="12" r="10"></circle>
-                    <path
-                        d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94">
-                    </path>
-                </svg>
-                <small class="d-block mb-3 text-muted">© 2017–2021</small>
+                <img src="/images/icon.png" height="32px">
+                <small class="ms-3 mb-3 text-white">HS London Marble © 2024</small>
             </div>
-            <div class="col-6 col-md">
+            {{-- <div class="col-6 col-md">
                 <h5>Features</h5>
                 <ul class="list-unstyled text-small">
                     <li><a class="link-secondary" href="https://getbootstrap.com/docs/5.0/examples/product/#">Cool
@@ -377,7 +562,7 @@
                     <li><a class="link-secondary"
                             href="https://getbootstrap.com/docs/5.0/examples/product/#">Terms</a></li>
                 </ul>
-            </div>
+            </div> --}}
         </div>
     </footer>
 
