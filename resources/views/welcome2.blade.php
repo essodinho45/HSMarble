@@ -395,7 +395,7 @@
                                     <div class="col-md-3 mx-2">
                                         <div class="card">
                                             <div class="card-img">
-                                                <img src="/images/mirrors/1.jpg" class="img-fluid">
+                                                <img src="/images/mirrors/1.JPG" class="img-fluid">
                                             </div>
                                         </div>
                                     </div>
@@ -404,7 +404,7 @@
                                     <div class="col-md-3 mx-2">
                                         <div class="card">
                                             <div class="card-img">
-                                                <img src="/images/mirrors/2.jpg" class="img-fluid">
+                                                <img src="/images/mirrors/2.JPG" class="img-fluid">
                                             </div>
                                         </div>
                                     </div>
@@ -413,7 +413,7 @@
                                     <div class="col-md-3 mx-2">
                                         <div class="card">
                                             <div class="card-img">
-                                                <img src="/images/mirrors/3.jpg" class="img-fluid">
+                                                <img src="/images/mirrors/3.JPG" class="img-fluid">
                                             </div>
                                         </div>
                                     </div>
@@ -422,7 +422,7 @@
                                     <div class="col-md-3 mx-2">
                                         <div class="card">
                                             <div class="card-img">
-                                                <img src="/images/mirrors/4.jpg" class="img-fluid">
+                                                <img src="/images/mirrors/4.JPG" class="img-fluid">
                                             </div>
                                         </div>
                                     </div>
@@ -431,7 +431,7 @@
                                     <div class="col-md-3 mx-2">
                                         <div class="card">
                                             <div class="card-img">
-                                                <img src="/images/mirrors/5.jpg" class="img-fluid">
+                                                <img src="/images/mirrors/5.JPG" class="img-fluid">
                                             </div>
                                         </div>
                                     </div>
@@ -440,7 +440,7 @@
                                     <div class="col-md-3 mx-2">
                                         <div class="card">
                                             <div class="card-img">
-                                                <img src="/images/mirrors/6.jpg" class="img-fluid">
+                                                <img src="/images/mirrors/6.JPG" class="img-fluid">
                                             </div>
                                         </div>
                                     </div>
@@ -449,7 +449,7 @@
                                     <div class="col-md-3 mx-2">
                                         <div class="card">
                                             <div class="card-img">
-                                                <img src="/images/mirrors/7.jpg" class="img-fluid">
+                                                <img src="/images/mirrors/7.JPG" class="img-fluid">
                                             </div>
                                         </div>
                                     </div>
@@ -458,7 +458,7 @@
                                     <div class="col-md-3 mx-2">
                                         <div class="card">
                                             <div class="card-img">
-                                                <img src="/images/mirrors/8.jpg" class="img-fluid">
+                                                <img src="/images/mirrors/8.JPG" class="img-fluid">
                                             </div>
                                         </div>
                                     </div>
@@ -467,7 +467,7 @@
                                     <div class="col-md-3 mx-2">
                                         <div class="card">
                                             <div class="card-img">
-                                                <img src="/images/mirrors/9.jpg" class="img-fluid">
+                                                <img src="/images/mirrors/9.JPG" class="img-fluid">
                                             </div>
                                         </div>
                                     </div>
@@ -476,7 +476,7 @@
                                     <div class="col-md-3 mx-2">
                                         <div class="card">
                                             <div class="card-img">
-                                                <img src="/images/mirrors/10.jpg" class="img-fluid">
+                                                <img src="/images/mirrors/10.JPG" class="img-fluid">
                                             </div>
                                         </div>
                                     </div>
