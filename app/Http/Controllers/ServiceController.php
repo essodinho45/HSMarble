@@ -21,7 +21,7 @@ class ServiceController extends Controller
      */
     public function create()
     {
-        //
+        return view('services.create');
     }
 
     /**
@@ -29,7 +29,26 @@ class ServiceController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        try {
+            $input = $request->all();
+            $images = array();
+            if ($files = $request->file('images')) {
+                foreach ($files as $file) {
+                    $name = $file->getClientOriginalName() . time();
+                    if (!in_array($file->getClientOriginalExtension(), ['png', 'jpg', 'jpeg']))
+                        throw new \Exception('Image file not supported');
+                    $file->move('images/services', $name);
+                    $images[] = 'images/services/' . $name;
+                }
+            }
+            $service = Service::create(['name' => $input['name'], 'content' => $input['content']]);
+            foreach ($images as $image) {
+                $service->images()->create(['url' => $image]);
+            }
+            return redirect()->route('services.index')->with('status', 'service-created');
+        } catch (\Exception $e) {
+            return redirect()->back()->with('error', $e->getMessage());
+        }
     }
 
     /**

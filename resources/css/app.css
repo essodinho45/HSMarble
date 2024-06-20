@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.tox-promotion,
+.tox-menubar,
+.tox-statusbar__right-container {
+    display: none !important;
+}
