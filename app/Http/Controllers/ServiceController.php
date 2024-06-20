@@ -34,11 +34,8 @@ class ServiceController extends Controller
             $images = array();
             if ($files = $request->file('images')) {
                 foreach ($files as $file) {
-                    $name = $file->getClientOriginalName() . time();
-                    if (!in_array($file->getClientOriginalExtension(), ['png', 'jpg', 'jpeg']))
-                        throw new \Exception('Image file not supported');
-                    $file->move('images/services', $name);
-                    $images[] = 'images/services/' . $name;
+                    $name = ImageController::storeImage($file);
+                    $images[] = '/images/services/' . $name;
                 }
             }
             $service = Service::create(['name' => $input['name'], 'content' => $input['content']]);
@@ -56,7 +53,6 @@ class ServiceController extends Controller
      */
     public function show(Service $service)
     {
-        //
     }
 
     /**
@@ -64,7 +60,7 @@ class ServiceController extends Controller
      */
     public function edit(Service $service)
     {
-        //
+        return view('services.edit', compact('service'));
     }
 
     /**
@@ -72,7 +68,23 @@ class ServiceController extends Controller
      */
     public function update(Request $request, Service $service)
     {
-        //
+        try {
+            $input = $request->all();
+            $images = array();
+            if ($files = $request->file('images')) {
+                foreach ($files as $file) {
+                    $name = ImageController::storeImage($file);
+                    $images[] = '/images/services/' . $name;
+                }
+            }
+            $service->update(['name' => $input['name'], 'content' => $input['content']]);
+            foreach ($images as $image) {
+                $service->images()->create(['url' => $image]);
+            }
+            return redirect()->route('services.index')->with('status', 'service-updated');
+        } catch (\Exception $e) {
+            return redirect()->back()->with('error', $e->getMessage());
+        }
     }
 
     /**
@@ -80,6 +92,8 @@ class ServiceController extends Controller
      */
     public function destroy(Service $service)
     {
-        //
+        foreach ($service->images as $image) {
+            ImageController::deleteImage($image);
+        }
     }
 }

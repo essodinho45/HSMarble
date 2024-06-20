@@ -15,6 +15,9 @@
             @if (session('status') === 'service-created')
                 <p x-data="{ show: true }" x-show="show" x-transition x-init="setTimeout(() => show = false, 2000)"
                     class="text-sm text-teal-600">{{ __('Service Created.') }}</p>
+            @elseif(session('status') === 'service-updated')
+                <p x-data="{ show: true }" x-show="show" x-transition x-init="setTimeout(() => show = false, 2000)"
+                    class="text-sm text-teal-600">{{ __('Service Updated.') }}</p>
             @endif
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 text-gray-900">
