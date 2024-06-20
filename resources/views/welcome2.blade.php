@@ -112,217 +112,27 @@
             <div class="d-flex align-items-start row mx-0">
                 <div class="nav flex-column nav-pills col-md-4 col-12" id="v-pills-tab" role="tablist"
                     aria-orientation="vertical">
-                    <button class="nav-link active rounded-0 text-capitalize" id="v-pills-tam-tab" data-bs-toggle="pill"
-                        data-bs-target="#v-pills-tam" type="button" role="tab" aria-controls="v-pills-tam"
-                        aria-selected="true">toughened antique mirror</button>
-                    <button class="nav-link rounded-0 text-capitalize" id="v-pills-pc-tab" data-bs-toggle="pill"
-                        data-bs-target="#v-pills-pc" type="button" role="tab" aria-controls="v-pills-pc"
-                        aria-selected="false">plain colour</button>
-                    <button class="nav-link rounded-0 text-capitalize" id="v-pills-dp-tab" data-bs-toggle="pill"
-                        data-bs-target="#v-pills-dp" type="button" role="tab" aria-controls="v-pills-dp"
-                        aria-selected="false">design printed</button>
-                    <button class="nav-link rounded-0 text-capitalize" id="v-pills-sc-tab" data-bs-toggle="pill"
-                        data-bs-target="#v-pills-sc" type="button" role="tab" aria-controls="v-pills-sc"
-                        aria-selected="true">sparkling colour</button>
-                    <button class="nav-link rounded-0 text-capitalize" id="v-pills-lb-tab" data-bs-toggle="pill"
-                        data-bs-target="#v-pills-lb" type="button" role="tab" aria-controls="v-pills-lb"
-                        aria-selected="false">led backlit</button>
-                    <button class="nav-link rounded-0 text-capitalize" id="v-pills-bm-tab" data-bs-toggle="pill"
-                        data-bs-target="#v-pills-bm" type="button" role="tab" aria-controls="v-pills-bm"
-                        aria-selected="false">bathroom mirror</button>
-                    <button class="nav-link rounded-0 text-capitalize" id="v-pills-fwm-tab" data-bs-toggle="pill"
-                        data-bs-target="#v-pills-fwm" type="button" role="tab" aria-controls="v-pills-fwm"
-                        aria-selected="true">Future wall mirrors</button>
-                    <button class="nav-link rounded-0 text-capitalize" id="v-pills-gb-tab" data-bs-toggle="pill"
-                        data-bs-target="#v-pills-gb" type="button" role="tab" aria-controls="v-pills-gb"
-                        aria-selected="false">glass balustrade</button>
-                    <button class="nav-link rounded-0 text-capitalize" id="v-pills-w-tab" data-bs-toggle="pill"
-                        data-bs-target="#v-pills-w" type="button" role="tab" aria-controls="v-pills-w"
-                        aria-selected="false">worktops</button>
-                    {{-- <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill"
-                        data-bs-target="#v-pills-messages" type="button" role="tab"
-                        aria-controls="v-pills-messages" aria-selected="false">Messages</button>
-                    <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill"
-                        data-bs-target="#v-pills-settings" type="button" role="tab"
-                        aria-controls="v-pills-settings" aria-selected="false">Settings</button> --}}
+                    @foreach ($services as $service)
+                        <button
+                            class="nav-link @if ($loop->index == 0) active @endif rounded-0 text-capitalize"
+                            id="v-pills-srv{{ $service->id }}-tab" data-bs-toggle="pill"
+                            data-bs-target="#v-pills-srv{{ $service->id }}" type="button" role="tab"
+                            aria-controls="v-pills-srv{{ $service->id }}"
+                            aria-selected="true">{{ $service->name }}</button>
+                    @endforeach
                 </div>
                 <div class="tab-content col-md-8 col-12" id="v-pills-tabContent">
-                    <div class="tab-pane fade show active" id="v-pills-tam" role="tabpanel"
-                        aria-labelledby="v-pills-tam-tab">
-                        <p class="pe-3">
-                            At <b>HS London Marble</b>, we offer toughened antique mirrors that
-                            combine elegance with durability. Our toughening process enhances the strength of the
-                            mirror,
-                            making it resistant to scratches and breakage. These mirrors feature a distressed vintage
-                            finish
-                            that adds character and charm to any space. Whether you're looking to add a touch of
-                            sophistication to your home or office, our toughened antique mirrors are the perfect choice.
-                            Transform your space with the timeless beauty of our antique mirrors from <b>HS Marble
-                                London</b>.
-                        </p>
-                    </div>
-                    <div class="tab-pane fade" id="v-pills-pc" role="tabpanel" aria-labelledby="v-pills-pc-tab">
-                        <p class="pe-3">We
-                            offer a stunning range of plain color glass at <b>HS London Marble</b>, that adds a touch of
-                            elegance
-                            and sophistication to any space. Our high-quality plain color glass is perfect for creating
-                            a
-                            sleek and modern look in your home or office. Whether you're looking to incorporate a subtle
-                            pop
-                            of color or create a seamless and sophisticated backdrop, our plain color glass is the
-                            perfect
-                            choice. With our expertise and dedication to quality, you can trust <b>HS London Marble</b>
-                            to
-                            provide
-                            you with the perfect solution for your glass needs.
-                        </p>
-                    </div>
-                    <div class="tab-pane fade" id="v-pills-dp" role="tabpanel" aria-labelledby="v-pills-dp-tab">
-                        <p class="pe-3">
-                            At <b>HS London Marble</b>, we offer a wide range of design printed glass options to enhance
-                            the
-                            aesthetic appeal of your space. Our design printed glass is a versatile and stylish choice
-                            for adding a unique touch to your interiors. Whether you're looking to create a bold
-                            statement or simply add a subtle element of design, our design printed glass can be
-                            customized to suit your specific preferences. With high-quality materials and expert
-                            craftsmanship, our design printed glass will bring new life to any room in your home or
-                            office. Contact us today to explore the endless design possibilities with our design printed
-                            glass products.
-                        </p>
-                    </div>
-                    <div class="tab-pane fade" id="v-pills-sc" role="tabpanel" aria-labelledby="v-pills-sc-tab">
-                        <p class="pe-3">
-                            Add a touch of elegance and glamour to your space with our stunning selection of sparkling
-                            color
-                            glass. At <b>HS London Marble</b>, we offer a range of vibrant and shimmering glass options
-                            that will
-                            instantly elevate the aesthetic of any room. Whether you want to create a bold statement
-                            piece
-                            with a splash of color or add a subtle hint of sparkle to your design, our sparkling color
-                            glass
-                            is the perfect choice. With our expertise and high-quality products, you can transform your
-                            space into a stylish and sophisticated oasis. Browse our collection today and discover the
-                            beauty and versatility of sparkling color glass.
-                        </p>
-                    </div>
-                    <div class="tab-pane fade" id="v-pills-lb" role="tabpanel" aria-labelledby="v-pills-lb-tab">
-                        <p class="pe-3">
-                            Introducing our exquisite LED backlit mirrors, the perfect fusion of functionality and
-                            sophistication. Elevate your space with these modern and stylish mirrors that not only
-                            provide practical illumination but also add a touch of elegance to any room. Our LED backlit
-                            mirrors are crafted with precision and attention to detail, ensuring a high-quality and
-                            durable product that will enhance the ambiance of your space. Whether it's for a residential
-                            or commercial setting, our LED backlit mirrors are sure to impress with their sleek design
-                            and stunning visual impact. Experience luxury and style with <b>HS London Marble</b>'s LED
-                            backlit
-                            mirrors.
-                        </p>
-                    </div>
-                    <div class="tab-pane fade" id="v-pills-bm" role="tabpanel" aria-labelledby="v-pills-bm-tab">
-                        <p class="pe-3">
-                            <b>HS London Marble</b> offers a stunning collection of bathroom mirrors that combine
-                            functionality
-                            with style. Our range includes a variety of designs, shapes, and sizes to suit every taste
-                            and bathroom decor. Whether you are looking for a sleek and modern mirror or a classic and
-                            elegant design, we have the perfect mirror to enhance your bathroom space. Our high-quality
-                            mirrors are made using premium materials and craftsmanship to ensure durability and
-                            longevity. Transform your bathroom into a luxurious retreat with a beautiful mirror from
-                            <b>HS
-                                London Marble</b>.
-                        </p>
-                    </div>
-                    <div class="tab-pane fade" id="v-pills-fwm" role="tabpanel" aria-labelledby="v-pills-fwm-tab">
-                        <p class="pe-3">
-                            Our collection of future wall mirrors at <b>HS London Marble</b> glass company brings a
-                            touch of
-                            contemporary elegance to any bathroom space. Crafted from high-quality glass and featuring
-                            innovative LED backlighting technology, these mirrors not only enhance the aesthetic appeal
-                            of the room but also provide functional and practical lighting for your daily grooming
-                            routine. The sleek and modern design of our future wall mirrors adds a sophisticated touch
-                            to any bathroom setting, making them a must-have accessory for those looking to elevate
-                            their space with style and functionality.
-                        </p>
-                    </div>
-                    <div class="tab-pane fade" id="v-pills-gb" role="tabpanel" aria-labelledby="v-pills-gb-tab">
-                        <p class="pe-3">
-                            Glass balustrades are a sophisticated and modern addition to any staircase or balcony,
-                            offering both style and safety. At <b>HS London Marble</b>, we offer a wide range of glass
-                            balustrade options to suit your design preferences and architectural requirements. Our
-                            expert team can customize the balustrades to fit your space perfectly, creating a sleek and
-                            seamless look. With high-quality materials and precise craftsmanship, our glass balustrades
-                            are not only functional but also add a touch of elegance to any interior or exterior space.
-                            Trust <b>HS London Marble</b> to deliver stunning glass balustrade solutions that enhance
-                            the
-                            beauty and functionality of your home or commercial property.
-                        </p>
-                    </div>
-                    <div class="tab-pane fade" id="v-pills-w" role="tabpanel" aria-labelledby="v-pills-w-tab">
-                        <p class="pe-3">
-                            For high-quality worktops that combine functionality with elegance, look no further than
-                            <b>HS
-                                London Marble</b>. Our range of worktops are expertly crafted from premium materials,
-                            ensuring
-                            durability and a stylish finish that will elevate any kitchen or bathroom design. Whether
-                            you prefer the timeless sophistication of marble, the sleek modern look of quartz, or the
-                            natural beauty of granite, we have the perfect worktop solution to suit your personal style
-                            and taste. Trust <b>HS London Marble</b> for stunning worktops that will enhance the
-                            aesthetic
-                            appeal and functionality of your space.
-                        </p>
-                    </div>
+                    @foreach ($services as $service)
+                        <div class="tab-pane fade @if ($loop->index == 0) show active @endif "
+                            id="v-pills-srv{{ $service->id }}" role="tabpanel"
+                            aria-labelledby="v-pills-srv{{ $service->id }}-tab">
+                            <p class="pe-3">
+                                {!! $service->content !!}
+                            </p>
+                        </div>
+                    @endforeach
                 </div>
             </div>
-            {{-- <div class="row">
-                <div class="col-12 col-md-4">
-                    <div class="bg-dark px-2 px-md-4 text-center overflow-hidden">
-                        <div class="my-2 py-2">
-                            <a class="text-capitalize btn text-white">toughened antique mirror</a>
-                        </div>
-                    </div>
-                    <div class="bg-light px-2 px-md-4 text-center overflow-hidden">
-                        <div class="my-2 p-2">
-                            <a class="text-capitalize btn">plain colour</a>
-                        </div>
-                    </div>
-                    <div class="bg-dark px-2 px-md-4 text-center overflow-hidden">
-                        <div class="my-2 py-2">
-                            <a class="text-capitalize btn text-white">design printed</a>
-                        </div>
-                    </div>
-                    <div class="bg-light px-2 px-md-4 text-center overflow-hidden">
-                        <div class="my-2 p-2">
-                            <a class="text-capitalize btn btn-sm">sparkling colour</a>
-                        </div>
-                    </div>
-                    <div class="bg-dark px-2 px-md-4 text-center overflow-hidden">
-                        <div class="my-2 py-2">
-                            <a class="text-capitalize btn btn-sm text-white">led backlit</a>
-                        </div>
-                    </div>
-                    <div class="bg-light px-2 px-md-4 text-center overflow-hidden">
-                        <div class="my-2 p-2">
-                            <a class="text-capitalize btn btn-sm">bathroom mirror</a>
-                        </div>
-                    </div>
-                    <div class="bg-dark px-2 px-md-3 text-center overflow-hidden">
-                        <div class="my-2 py-2">
-                            <a class="text-capitalize btn text-white">Future wall mirrors</a>
-                        </div>
-                    </div>
-                    <div class="bg-light px-2 px-md-3 text-center overflow-hidden">
-                        <div class="my-2 p-2">
-                            <a class="text-capitalize btn">glass bulastrade</a>
-                        </div>
-                    </div>
-                    <div class="bg-dark px-2 px-md-3 text-center overflow-hidden">
-                        <div class="my-2 py-2">
-                            <a class="text-capitalize btn text-white">worktops</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-8 col-md-4">
-                </div>
-            </div> --}}
         </div>
 
         {{-- <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3" id="about">
