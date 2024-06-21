@@ -248,17 +248,26 @@
                             <a class="btn btn-light rounded-0">Unit 5e Station Rd, Slough SL3 6EG</a>
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 mb-2">
                         <div class="btn-group btn-group-lg w-100">
                             <a href="tel:07951612480" class="btn btn-light rounded-0"><i class="bi bi-phone"></i></a>
                             <a href="tel:07951612480" class="btn btn-light rounded-0">07951612480</a>
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 mb-2">
                         <div class="btn-group btn-group-lg w-100">
                             <a href="tel:02082260140" class="btn btn-light rounded-0"><i
                                     class="bi bi-telephone"></i></a>
                             <a href="tel:02082260140" class="btn btn-light rounded-0">02082260140</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-2">
+                        <div class="btn-group btn-group-lg w-100">
+                            <a href="https://www.facebook.com/Granite.Glass" target="_blank"
+                                class="btn btn-light rounded-0"><i class="bi bi-facebook"></i></a>
+                            <a href="https://www.facebook.com/Granite.Glass" target="_blank"
+                                class="btn btn-light rounded-0">HS
+                                Londonmarble</a>
                         </div>
                     </div>
                 </div>
