@@ -13,7 +13,7 @@ class PortofolioItemController extends Controller
     public function index()
     {
         $portofolio_items = PortofolioItem::all();
-        return view('portofolio_items.index', compact(['portofolio_items']));
+        return view('portofolio-items.index', compact(['portofolio_items']));
     }
 
     /**
@@ -21,7 +21,7 @@ class PortofolioItemController extends Controller
      */
     public function create()
     {
-        return view('services.create');
+        return view('portofolio-items.create');
     }
 
     /**
@@ -38,7 +38,7 @@ class PortofolioItemController extends Controller
                     $images[] = '/images/portofolio/' . $name;
                 }
             }
-            $portofolio_item = PortofolioItem::create(['name' => $input['name'], 'content' => $input['content']]);
+            $portofolio_item = PortofolioItem::create(['name' => $input['name'], 'content' => $input['content'] ?? '']);
             foreach ($images as $image) {
                 $portofolio_item->images()->create(['url' => $image]);
             }
@@ -78,7 +78,7 @@ class PortofolioItemController extends Controller
                     $images[] = '/images/portofolio/' . $name;
                 }
             }
-            $portofolioItem->update(['name' => $input['name'], 'content' => $input['content']]);
+            $portofolioItem->update(['name' => $input['name'], 'content' => $input['content'] ?? '']);
             foreach ($images as $image) {
                 $portofolioItem->images()->create(['url' => $image]);
             }

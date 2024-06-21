@@ -38,7 +38,7 @@ class ServiceController extends Controller
                     $images[] = '/images/services/' . $name;
                 }
             }
-            $service = Service::create(['name' => $input['name'], 'content' => $input['content']]);
+            $service = Service::create(['name' => $input['name'], 'content' => $input['content'] ?? '']);
             foreach ($images as $image) {
                 $service->images()->create(['url' => $image]);
             }
@@ -77,7 +77,7 @@ class ServiceController extends Controller
                     $images[] = '/images/services/' . $name;
                 }
             }
-            $service->update(['name' => $input['name'], 'content' => $input['content']]);
+            $service->update(['name' => $input['name'], 'content' => $input['content'] ?? '']);
             foreach ($images as $image) {
                 $service->images()->create(['url' => $image]);
             }
