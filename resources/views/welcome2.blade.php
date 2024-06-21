@@ -129,6 +129,15 @@
                             <p class="pe-3">
                                 {!! $service->content !!}
                             </p>
+                            <div class="container">
+                                <div class="slick-carousel" id="cs{{ $service->id }}">
+                                    @foreach ($service->images as $s_image)
+                                        <div class="mx-2">
+                                            <img src="{{ $s_image->url }}" class="img-fluid">
+                                        </div>
+                                    @endforeach
+                                </div>
+                            </div>
                         </div>
                     @endforeach
                 </div>
