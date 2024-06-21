@@ -47,7 +47,7 @@
     </style>
 
 
-    @vite(['resources/sass/app.scss', 'resources/js/app.js'])
+    @vite(['resources/sass/app.scss', 'resources/css/slick.css', 'resources/js/app.js', 'resources/js/slickCarousel.js'])
     <!-- Custom styles for this template -->
     {{-- <link href="./Product example · Bootstrap v5.0_files/product.css" rel="stylesheet"> --}}
 </head>

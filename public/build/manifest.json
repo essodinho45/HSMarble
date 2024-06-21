@@ -12,10 +12,21 @@
     "src": "resources/css/app.css",
     "isEntry": true
   },
+  "resources/css/slick.css": {
+    "file": "assets/slick-DNbYUDKg.css",
+    "src": "resources/css/slick.css",
+    "isEntry": true
+  },
   "resources/js/app.js": {
     "file": "assets/app-DTsjb8vf.js",
     "name": "app",
     "src": "resources/js/app.js",
+    "isEntry": true
+  },
+  "resources/js/slickCarousel.js": {
+    "file": "assets/slickCarousel-B0E5NDWD.js",
+    "name": "slickCarousel",
+    "src": "resources/js/slickCarousel.js",
     "isEntry": true
   },
   "resources/js/textEditor.js": {
