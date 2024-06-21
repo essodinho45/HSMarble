@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\ProfileUpdateRequest;
+use App\Models\PortofolioItem;
 use App\Models\Service;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
@@ -15,7 +16,8 @@ class ProfileController extends Controller
     public function home()
     {
         $services = Service::all();
-        return view('welcome2', compact(['services']));
+        $portofolio_items = PortofolioItem::all();
+        return view('welcome2', compact(['services', 'portofolio_items']));
     }
     /**
      * Display the user's profile form.

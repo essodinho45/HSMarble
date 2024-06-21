@@ -179,11 +179,15 @@
         <div class="w-100 my-md-3" id="portofolio">
             <h1 class="display-4 fw-normal my-4 text-center">Our Work</h1>
             <ul class="nav nav-pills nav-fill mb-3" id="pills-tab" role="tablist">
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link active rounded-0" id="pills-mirrors-tab" data-bs-toggle="pill"
-                        data-bs-target="#pills-mirrors" type="button" role="tab" aria-controls="pills-mirrors"
-                        aria-selected="true">Mirrors</button>
-                </li>
+                @foreach ($portofolio_items as $item)
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link @if ($loop->index == 0) active @endif rounded-0"
+                            id="pills-pi{{ $item->id }}-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-pi{{ $item->id }}" type="button" role="tab"
+                            aria-controls="pills-pi{{ $item->id }}"
+                            aria-selected="true">{{ $item->name }}</button>
+                    </li>
+                @endforeach
                 {{-- <li class="nav-item" role="presentation">
                     <button class="nav-link rounded-0" id="pills-profile-tab" data-bs-toggle="pill"
                         data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
@@ -196,113 +200,37 @@
                 </li> --}}
             </ul>
             <div class="tab-content" id="pills-tabContent">
-                <div class="tab-pane fade show active" id="pills-mirrors" role="tabpanel"
-                    aria-labelledby="pills-home-mirrors">
-                    <div class="row mx-auto my-auto justify-content-center">
-                        <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
-                            <div class="carousel-inner" role="listbox">
-                                <div class="carousel-item active">
-                                    <div class="col-md-3 mx-2">
-                                        <div class="card">
-                                            <div class="card-img">
-                                                <img src="/images/mirrors/1.JPG" class="img-fluid">
+                @foreach ($portofolio_items as $item)
+                    <div class="tab-pane fade @if ($loop->index == 0) show @endif active"
+                        id="pills-pi{{ $item->id }}" role="tabpanel"
+                        aria-labelledby="pills-home-pi{{ $item->id }}">
+                        <div class="row mx-auto my-auto justify-content-center">
+                            <div id="pi{{ $item->id }}Carousel" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner" role="listbox">
+                                    @foreach ($item->images as $image)
+                                        <div class="carousel-item @if ($loop->index == 0) active @endif">
+                                            <div class="col-md-3 mx-2">
+                                                <div class="card">
+                                                    <div class="card-img">
+                                                        <img src="{{ $image->url }}" class="img-fluid">
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    @endforeach
                                 </div>
-                                <div class="carousel-item">
-                                    <div class="col-md-3 mx-2">
-                                        <div class="card">
-                                            <div class="card-img">
-                                                <img src="/images/mirrors/2.JPG" class="img-fluid">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <div class="col-md-3 mx-2">
-                                        <div class="card">
-                                            <div class="card-img">
-                                                <img src="/images/mirrors/3.JPG" class="img-fluid">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <div class="col-md-3 mx-2">
-                                        <div class="card">
-                                            <div class="card-img">
-                                                <img src="/images/mirrors/4.JPG" class="img-fluid">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <div class="col-md-3 mx-2">
-                                        <div class="card">
-                                            <div class="card-img">
-                                                <img src="/images/mirrors/5.JPG" class="img-fluid">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <div class="col-md-3 mx-2">
-                                        <div class="card">
-                                            <div class="card-img">
-                                                <img src="/images/mirrors/6.JPG" class="img-fluid">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <div class="col-md-3 mx-2">
-                                        <div class="card">
-                                            <div class="card-img">
-                                                <img src="/images/mirrors/7.JPG" class="img-fluid">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <div class="col-md-3 mx-2">
-                                        <div class="card">
-                                            <div class="card-img">
-                                                <img src="/images/mirrors/8.JPG" class="img-fluid">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <div class="col-md-3 mx-2">
-                                        <div class="card">
-                                            <div class="card-img">
-                                                <img src="/images/mirrors/9.JPG" class="img-fluid">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <div class="col-md-3 mx-2">
-                                        <div class="card">
-                                            <div class="card-img">
-                                                <img src="/images/mirrors/10.JPG" class="img-fluid">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                <a class="carousel-control-prev bg-dark w-aut" href="#pi{{ $item->id }}Carousel"
+                                    role="button" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                </a>
+                                <a class="carousel-control-next bg-dark w-aut" href="#pi{{ $item->id }}Carousel"
+                                    role="button" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                </a>
                             </div>
-                            <a class="carousel-control-prev bg-dark w-aut" href="#recipeCarousel" role="button"
-                                data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            </a>
-                            <a class="carousel-control-next bg-dark w-aut" href="#recipeCarousel" role="button"
-                                data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            </a>
                         </div>
                     </div>
-                </div>
+                @endforeach
                 {{-- <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
                     ...</div>
                 <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">

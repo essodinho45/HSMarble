@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ImageController;
+use App\Http\Controllers\PortofolioItemController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ServiceController;
 use Illuminate\Support\Facades\Route;
@@ -26,6 +27,7 @@ Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::resource('services', ServiceController::class)->except(['view', 'show']);
+    Route::resource('portofolio-items', PortofolioItemController::class)->except(['view', 'show']);
     Route::get('/image/{image}/{model}/{type?}', [ImageController::class, 'destroy'])->name('images.delete');
     // Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });

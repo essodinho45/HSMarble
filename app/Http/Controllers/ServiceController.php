@@ -95,5 +95,7 @@ class ServiceController extends Controller
         foreach ($service->images as $image) {
             ImageController::deleteImage($image);
         }
+        $service->delete();
+        return redirect()->route('services.index');
     }
 }
