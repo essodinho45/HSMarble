@@ -32,7 +32,7 @@ class ImageController extends Controller
                 $manager = new ImageManager(Driver::class);
                 $image = $manager->read($file);
                 $filename = uniqid() . time() . rand(10, 1000000) . '.jpg';
-                $image->toJpeg()->save('images/' . $type . $filename);
+                $image->toJpeg()->save('images/' . $type . '/' . $filename);
             } else {
                 $filename = uniqid() . time() . rand(10, 1000000) . '.' . $extension;
                 $file->move('images/' . $type, $filename);
