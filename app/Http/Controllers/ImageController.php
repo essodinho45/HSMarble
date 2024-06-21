@@ -4,7 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Models\Image;
 use Illuminate\Support\Facades\File;
-use Illuminate\Http\Request;
+use Intervention\Image\ImageManager;
+use Intervention\Image\Drivers\Imagick\Driver;
 
 class ImageController extends Controller
 {
@@ -21,12 +22,24 @@ class ImageController extends Controller
     }
     public static function storeImage($file, $type = 'services')
     {
-        $extension = $file->getClientOriginalExtension();
-        $filename = pathinfo($file->getClientOriginalName(), PATHINFO_FILENAME);
-        if (!in_array($extension, ['png', 'jpg', 'jpeg']))
-            throw new \Exception('Image file not supported');
-        $name = $filename . time() . '.' . $extension;
-        $file->move('images/' . $type, $name);
-        return $name;
+        try {
+            $extension = $file->getClientOriginalExtension();
+            $filetype = $file->getMimeType();
+            if (!in_array(substr($filetype, 0, 5), ['image', 'video']))
+                throw new \Exception('File not supported');
+            $filename = pathinfo($file->getClientOriginalName(), PATHINFO_FILENAME);
+            if (strtolower($extension) == 'heic') {
+                $manager = new ImageManager(Driver::class);
+                $image = $manager->read($file);
+                $filename = uniqid() . time() . rand(10, 1000000) . '.jpg';
+                $image->toJpeg()->save('images/' . $type . $filename);
+            } else {
+                $filename = uniqid() . time() . rand(10, 1000000) . '.' . $extension;
+                $file->move('images/' . $type, $filename);
+            }
+            return $filename;
+        } catch (\Exception $e) {
+            throw $e;
+        }
     }
 }
