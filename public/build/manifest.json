@@ -7,9 +7,34 @@
     "file": "assets/bootstrap-icons-BtvjY1KL.woff2",
     "src": "node_modules/bootstrap-icons/font/fonts/bootstrap-icons.woff2"
   },
+  "resources/css/ajax-loader.gif": {
+    "file": "assets/ajax-loader-BcnMEykj.gif",
+    "src": "resources/css/ajax-loader.gif"
+  },
   "resources/css/app.css": {
-    "file": "assets/app-BfMCKUMa.css",
+    "file": "assets/app-CvvMnKkK.css",
     "src": "resources/css/app.css",
+    "isEntry": true
+  },
+  "resources/css/fonts/slick.eot": {
+    "file": "assets/slick-Bi9J8BMx.eot",
+    "src": "resources/css/fonts/slick.eot"
+  },
+  "resources/css/fonts/slick.svg": {
+    "file": "assets/slick-BlzDm7g2.svg",
+    "src": "resources/css/fonts/slick.svg"
+  },
+  "resources/css/fonts/slick.ttf": {
+    "file": "assets/slick-DWzRxEMf.ttf",
+    "src": "resources/css/fonts/slick.ttf"
+  },
+  "resources/css/fonts/slick.woff": {
+    "file": "assets/slick-BlUtDIuC.woff",
+    "src": "resources/css/fonts/slick.woff"
+  },
+  "resources/css/slick-theme.css": {
+    "file": "assets/slick-theme-BkPJ2Hxr.css",
+    "src": "resources/css/slick-theme.css",
     "isEntry": true
   },
   "resources/css/slick.css": {
@@ -24,7 +49,7 @@
     "isEntry": true
   },
   "resources/js/slickCarousel.js": {
-    "file": "assets/slickCarousel-B0E5NDWD.js",
+    "file": "assets/slickCarousel-BqbyltCR.js",
     "name": "slickCarousel",
     "src": "resources/js/slickCarousel.js",
     "isEntry": true

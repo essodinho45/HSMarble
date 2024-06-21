@@ -47,7 +47,7 @@
     </style>
 
 
-    @vite(['resources/sass/app.scss', 'resources/css/slick.css', 'resources/js/app.js', 'resources/js/slickCarousel.js'])
+    @vite(['resources/sass/app.scss', 'resources/css/slick.css', 'resources/css/slick-theme.css', 'resources/js/app.js', 'resources/js/slickCarousel.js'])
     <!-- Custom styles for this template -->
     {{-- <link href="./Product example · Bootstrap v5.0_files/product.css" rel="stylesheet"> --}}
 </head>
@@ -204,38 +204,22 @@
                     <div class="tab-pane fade @if ($loop->index == 0) show @endif active"
                         id="pills-pi{{ $item->id }}" role="tabpanel"
                         aria-labelledby="pills-home-pi{{ $item->id }}">
-                        <div class="row mx-auto my-auto justify-content-center">
-                            <div id="pi{{ $item->id }}Carousel" class="carousel slide" data-bs-ride="carousel">
-                                <div class="carousel-inner" role="listbox">
-                                    @foreach ($item->images as $image)
-                                        <div class="carousel-item @if ($loop->index == 0) active @endif">
-                                            <div class="col-md-3 mx-2">
-                                                <div class="card">
-                                                    <div class="card-img">
-                                                        <img src="{{ $image->url }}" class="img-fluid">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    @endforeach
-                                </div>
-                                <a class="carousel-control-prev bg-dark w-aut" href="#pi{{ $item->id }}Carousel"
-                                    role="button" data-bs-slide="prev">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                </a>
-                                <a class="carousel-control-next bg-dark w-aut" href="#pi{{ $item->id }}Carousel"
-                                    role="button" data-bs-slide="next">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                </a>
+                        <div class="container">
+                            <div class="slick-carousel" id="cp{{ $item->id }}">
+                                @foreach ($item->images as $image)
+                                    <div class="mx-2">
+                                        <img src="{{ $image->url }}" class="img-fluid">
+                                    </div>
+                                @endforeach
                             </div>
                         </div>
                     </div>
                 @endforeach
-                {{-- <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+            </div>
+            {{-- <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
                     ...</div>
                 <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
                     ...</div> --}}
-            </div>
         </div>
         <div class="w-100 mt-md-3 bg-dark" id="contanct">
             <h1 class="display-4 fw-normal pt-3 my-4 text-center text-light">Contact Us</h1>
