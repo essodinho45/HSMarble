@@ -12,7 +12,7 @@
     "src": "resources/css/ajax-loader.gif"
   },
   "resources/css/app.css": {
-    "file": "assets/app-CvvMnKkK.css",
+    "file": "assets/app-DPkMqI2W.css",
     "src": "resources/css/app.css",
     "isEntry": true
   },
@@ -49,7 +49,7 @@
     "isEntry": true
   },
   "resources/js/slickCarousel.js": {
-    "file": "assets/slickCarousel-BqbyltCR.js",
+    "file": "assets/slickCarousel-i0Q1aNw4.js",
     "name": "slickCarousel",
     "src": "resources/js/slickCarousel.js",
     "isEntry": true
@@ -64,7 +64,7 @@
     ]
   },
   "resources/sass/app.scss": {
-    "file": "assets/app-BzbcnUy2.css",
+    "file": "assets/app-CWP2k45N.css",
     "src": "resources/sass/app.scss",
     "isEntry": true
   }

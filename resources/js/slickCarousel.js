@@ -27,3 +27,8 @@ $(function () {
         ]
     });
 });
+
+$(document).on("click", ".image-modal-btn", function () {
+    var url = $(this).data('url');
+    $("#image-modal-body").html("<img class='modal-image' src='"+url+"'>");
+});

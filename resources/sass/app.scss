@@ -172,3 +172,11 @@ p {
     display: none;
     transform: translateX(0);
 }
+
+.modal-image{
+    max-height: 95vh;
+}
+ .modal-dialog{
+     width: fit-content;
+     max-width: 95vw;
+ }

@@ -133,7 +133,9 @@
                                 <div class="slick-carousel" id="cs{{ $service->id }}">
                                     @foreach ($service->images as $s_image)
                                         <div class="mx-2">
-                                            <img src="{{ $s_image->url }}" class="img-fluid">
+                                            <a data-bs-toggle="modal" data-bs-target="#imageModal" data-url="{{ $s_image->url }}" class="image-modal-btn">
+                                                <img src="{{ $s_image->url }}" class="img-fluid">
+                                            </a>
                                         </div>
                                     @endforeach
                                 </div>
@@ -217,7 +219,9 @@
                             <div class="slick-carousel" id="cp{{ $item->id }}">
                                 @foreach ($item->images as $image)
                                     <div class="mx-2">
-                                        <img src="{{ $image->url }}" class="img-fluid">
+                                        <a data-bs-toggle="modal" data-bs-target="#imageModal" data-url="{{ $image->url }}" class="image-modal-btn">
+                                            <img src="{{ $image->url }}" class="img-fluid">
+                                        </a>
                                     </div>
                                 @endforeach
                             </div>
@@ -340,7 +344,14 @@
             </div> --}}
         </div>
     </footer>
-
+    <div id="imageModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel" aria-hidden="true">
+        <div class="modal-dialog my-2 modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body p-0" id="image-modal-body">
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
