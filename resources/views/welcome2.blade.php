@@ -135,7 +135,7 @@
                                         <div class="mx-2">
                                             <a data-bs-toggle="modal" data-bs-target="#imageModal" data-url="{{ $s_image->url }}" class="image-modal-btn">
                                                 <img src="{{ $s_image->url }}" class="img-fluid">
-                                            </a>
+                                                </a>
                                         </div>
                                     @endforeach
                                 </div>
