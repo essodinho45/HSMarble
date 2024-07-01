@@ -133,7 +133,13 @@
                                 <div class="slick-carousel" id="cs{{ $service->id }}">
                                     @foreach ($service->images as $s_image)
                                         <div class="mx-2">
-                                            <img src="{{ $s_image->url }}" class="img-fluid">
+                                            @if ($s_image->is_video)
+                                                <video class="img-fluid" controls>
+                                                    <source src="{{ $s_image->url }}">
+                                                </video>
+                                            @else
+                                                <img src="{{ $s_image->url }}" class="img-fluid">
+                                            @endif
                                         </div>
                                     @endforeach
                                 </div>
@@ -216,9 +222,13 @@
                         <div class="container">
                             <div class="slick-carousel" id="cp{{ $item->id }}">
                                 @foreach ($item->images as $image)
-                                    <div class="mx-2">
+                                    @if ($image->is_video)
+                                        <video class="img-fluid" controls>
+                                            <source src="{{ $image->url }}">
+                                        </video>
+                                    @else
                                         <img src="{{ $image->url }}" class="img-fluid">
-                                    </div>
+                                    @endif
                                 @endforeach
                             </div>
                         </div>

@@ -36,7 +36,13 @@
                         <div id="images" class="grid gap-2 grid-cols-1 xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2">
                             @foreach ($service->images as $image)
                                 <div>
-                                    <img class="h-48 w-48 object-cover" src="{{ $image->url }}">
+                                    @if ($image->is_video)
+                                        <video class="h-48 w-48 object-cover" controls>
+                                            <source src="{{ $image->url }}">
+                                        </video>
+                                    @else
+                                        <img class="h-48 w-48 object-cover" src="{{ $image->url }}">
+                                    @endif
                                     <a href="{{ route('images.delete', [$image, $service]) }}"
                                         class="float-start me-2 mt-2 px-4 py-2 bg-red-800 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-red-700 active:bg-red-900 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 transition ease-in-out duration-150">
                                         Delete Image
