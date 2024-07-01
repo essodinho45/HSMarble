@@ -20,6 +20,8 @@ class Image extends Model
     }
     public function getIsVideoAttribute()
     {
+        if (!File::exists(public_path($this->url)))
+            return false;
         $type = File::mimeType(public_path($this->url));
         return (substr($type, 0, 5) == 'video');
     }
