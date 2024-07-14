@@ -133,15 +133,15 @@
                                 <div class="slick-carousel" id="cs{{ $service->id }}">
                                     @foreach ($service->images as $s_image)
                                         <div class="mx-2">
-                                            <a data-bs-toggle="modal" data-bs-target="#imageModal" data-url="{{ $s_image->url }}" class="image-modal-btn">
-                                                @if ($s_image->is_video)
-                                                    <video class="img-fluid" controls>
-                                                        <source src="{{ $s_image->url }}">
-                                                    </video>
-                                                @else
+                                            @if ($s_image->is_video)
+                                                <video class="img-fluid" controls>
+                                                    <source src="{{ $s_image->url }}">
+                                                </video>
+                                            @else
+                                                <a data-bs-toggle="modal" data-bs-target="#imageModal" data-url="{{ $s_image->url }}" class="image-modal-btn">
                                                     <img src="{{ $s_image->url }}" class="img-fluid">
-                                                @endif
-                                            </a>
+                                                </a>
+                                            @endif
                                         </div>
                                     @endforeach
                                 </div>
@@ -225,15 +225,15 @@
                             <div class="slick-carousel" id="cp{{ $item->id }}">
                                 @foreach ($item->images as $image)
                                 <div class="mx-2">
-                                    <a data-bs-toggle="modal" data-bs-target="#imageModal" data-url="{{ $image->url }}" class="image-modal-btn">
-                                        @if ($image->is_video)
-                                            <video class="img-fluid" controls>
-                                                <source src="{{ $image->url }}">
-                                            </video>
-                                        @else
+                                    @if ($image->is_video)
+                                        <video class="img-fluid" controls>
+                                            <source src="{{ $image->url }}">
+                                        </video>
+                                    @else
+                                        <a data-bs-toggle="modal" data-bs-target="#imageModal" data-url="{{ $image->url }}" class="image-modal-btn">
                                             <img src="{{ $image->url }}" class="img-fluid">
-                                        @endif
-                                    </a>
+                                        </a>
+                                    @endif
                                 </div>
                                 @endforeach
                             </div>
